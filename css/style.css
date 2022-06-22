@@ -60,10 +60,6 @@ MENU
   padding-top: 10vh;
 }
 
-.wrapper {
-  padding: 1rem 3.5rem;
-}
-
 /*
 CONTACT
 ================================================ */
@@ -120,6 +116,24 @@ MOBILE SIZE
   p,
 .menu-list li {
     font-size: 1rem;
+  }
+
+  .hero {
+    padding-top: 12vh;
+  }
+}
+@media (max-width: 425px) {
+  .title {
+    font-size: 4rem;
+  }
+
+  p {
+    padding: 0 1rem;
+  }
+
+  p,
+.menu-list li {
+    font-size: 0.8rem;
   }
 
   .hero {
