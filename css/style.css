@@ -78,9 +78,6 @@ CONTACT
   display: inline-block;
   margin: 2rem 0 2.25rem;
 }
-.btn:hover {
-  background: #777;
-}
 
 .contact-sns {
   display: flex;
@@ -97,8 +94,20 @@ CONTACT
   padding: 0.75rem 0 0 0.125rem;
   color: #555;
 }
-.contact-sns a:hover {
-  background: rgba(255, 255, 255, 0.5);
+
+/* Ripple effect */
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+  -webkit-transition: background 0.8s;
+  -moz-transition: background 0.8s;
+  -ms-transition: background 0.8s;
+  -o-transition: background 0.8s;
+}
+.ripple:active {
+  background-color: #777;
+  background-size: 100%;
+  transition: background 0s;
 }
 
 /*
@@ -138,6 +147,15 @@ MOBILE SIZE
 
   .hero {
     padding-top: 12vh;
+  }
+}
+@media (hover: hover) {
+  .btn:hover {
+    background: #777;
+  }
+
+  .contact-sns a:hover {
+    background: rgba(255, 255, 255, 0.5);
   }
 }
 /*# sourceMappingURL=style.css.map */
