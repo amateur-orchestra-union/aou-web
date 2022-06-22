@@ -53,38 +53,13 @@ MENU
 ================================================ */
 .menu {
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/concerts/lumiere.jpg);
-    /* display: flex; */
     align-items: center;
     text-align: center;
     padding-top: 10vh;
 }
 .wrapper {
-    max-width: 900px;
-    /* width: 100%; */
-    margin: 0 auto;
-    padding: 0 1rem;
+    padding: 1rem 3.5rem;
 }
-.menu-list {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    tr {
-        display: flex;
-        font-size: 1.125rem;
-        margin-bottom: .5rem;
-        line-height: 1.7;
-        color: #fff;
-    }
-    th {
-        font-weight: normal;
-        color: #fff;
-    }
-    td {
-        padding-left: 1rem;
-        color: #fff;
-    }
-}
-
 /*
 CONTACT
 ================================================ */
