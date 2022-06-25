@@ -13,10 +13,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b8a7fea4d4.js" crossorigin="anonymous"></script>
+    <script src="js/nav.js"></script>
 </head>
 
 <body>
-
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#about" onclick="closeNav()">About</a>
+        <a href="#conductor" onclick="closeNav()">Conductor</a>
+        <a href="#chef" onclick="closeNav()">Chef</a>
+        <a href="#staff" onclick="closeNav()">Staff</a>
+        <a href="#archive" onclick="closeNav()">Archive</a>
+    </div>
     <div class="container">
         <section class="hero">
             <div class="topnav" id="myTopnav">
@@ -25,6 +33,16 @@
                         <source media="(max-width: 700px)" srcset="images/logos/aou_logo.png" sizes="">
                         <img class="logo" src="images/logos/aou_watermark.png" alt="">
                     </picture>
+                </a>
+                <ul>
+                    <a href="#about">About</a>
+                    <a href="#conductor">Conductor</a>
+                    <a href="#chef">Chef</a>
+                    <a href="#staff">Staff</a>
+                    <a href="#archive">Archive</a>
+                </ul>
+                <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                    <i class="fa fa-bars"></i>
                 </a>
             </div>
             <h1 class="title">Amateur Orchestra Union</h1>
