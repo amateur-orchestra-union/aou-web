@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>About</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link href="css/about.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b8a7fea4d4.js" crossorigin="anonymous"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/history.js"></script>
+</head>
+
+<body>
+    <aside>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="about.html" onclick="closeNav()">About</a>
+            <a href="#conductor" onclick="closeNav()">Conductor</a>
+            <a href="#chef" onclick="closeNav()">Chef</a>
+            <a href="#staff" onclick="closeNav()">Staff</a>
+            <a href="#archive" onclick="closeNav()">Archive</a>
+        </div>
+    </aside>
+
+    <div class="container about">
+        <header>
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" class="active">
+                    <picture>
+                        <source media="(max-width: 700px)" srcset="images/logos/aou_logo.png" sizes="">
+                        <img class="logo" src="images/logos/aou_watermark.png" alt="">
+                    </picture>
+                </a>
+                <ul>
+                    <a href="about.html">About</a>
+                    <a href="#conductor">Conductor</a>
+                    <a href="#chef">Chef</a>
+                    <a href="#staff">Staff</a>
+                    <a href="#archive">Archive</a>
+                </ul>
+                <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </header>
+
+        <section class="hero">
+            <h1 class="title">About</h1>
+            <div class="card">
+                <p>
+                    대학아마추어오케스트라연합(AOU, Amateur Orchestra Union of university)은 2014년 6월에 창설된 대학 아마추어 오케스트라 연합으로,
+                    2019년 5월 기준 서울을 비롯한 전국 약 60개 대학의 아마추어 오케스트라가 활발히 교류하고 있습니다.</p> <br>
+                <p>
+                    AOU에서는 국내의 대학에서 운영되고 있는 아마추어 오케스트라 간 네트워크를 구성하여 가입단체 간 연주회 정보 공유 및 오케스트라 운영을 위한 정보 공유를 할 수 있는 장을
+                    매년 프로젝트 연주회를 주최해 공연을 통한 오케스트라 단원들 간의 교류, 단일 대학 아마추어 오케스트라에서는 도전하기 어려운 프로그램을 기획하여 공연 레퍼토리의 확대 등을
+                    위해 노력하고 있습니다.
+                </p>
+                <br>
+                <p>
+                    대외적으로는 전문음악기관(금호아시아나, 서울시향 등)과의 티켓제휴 및 합동공연을 통해 클래식 대중화, 클래식 진입장벽 완화 및 클래식의 저변 확대를 위해 노력하고 있습니다.
+                </p>
+            </div>
+        </section>
+
+        <section class="menu">
+            <h2 class="title">History</h2>
+            <div class="row">
+                <!-- history.js 참고 -->
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+@use "header";
+@use "sidebar";
+@use "common";
+@use "section";
+
+/* _about.scss */
+.about {
+    position: relative;
+    text-align: center;
+}
+
+
+// About
+.card {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    line-height: 1.5;
+
+    p {
+        text-align: left;
+        padding: 0 1rem;
+        color: white;
+    }
+}
+
+// History
+.menu {
+    overflow: scroll;
+}
+
+.row {
+    display: grid;
+    width: 98%;
+    margin: 0 auto 1vw;
+    gap: 2vw;
+    grid-template-columns: repeat(4, 23vw);
+}
+
+.column {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1440px) {
+    .row {
+        width: 96%;
+        margin: 0 auto 2vw;
+        gap: 3vw;
+        grid-template-columns: repeat(3, 30vw);
+    }
+
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: fit-content;
+        line-height: 1.2;
+
+        p {
+            font-size: medium;
+        }
+    }
+
+    .row {
+        width: 94%;
+        margin: 0 auto 3vw;
+        gap: 2vw;
+        grid-template-columns: repeat(2, 46vw);
+    }
+}
+
+@media (hover:hover) {
+    .column {
+        &:hover {
+            box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+        }
+    }
+}
