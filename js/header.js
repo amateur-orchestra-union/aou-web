@@ -2,8 +2,8 @@ const header = /*html*/ `
 <div class="topnav" id="myTopnav">
     <a href="index.html" class="active">
         <picture>
-            <source media="(max-width: 700px)" srcset="/images/logos/aou_logo.png" sizes="">
-            <img class="logo" src="/images/logos/aou_watermark.png" alt="">
+            <source media="(max-width: 700px)" srcset="images/logos/aou_logo.png" sizes="">
+            <img class="logo" src="images/logos/aou_watermark.png" alt="">
         </picture>
     </a>
     <ul>
