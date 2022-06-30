@@ -189,7 +189,7 @@ MOBILE SIZE
 HERO
 ================================================ */
 .hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/concerts/muse.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/concerts/muse.jpg);
   text-align: center;
   padding-top: 10vh;
 }
@@ -198,7 +198,7 @@ HERO
 MENU
 ================================================ */
 .menu {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/concerts/lumiere.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/concerts/lumiere.jpg);
   align-items: center;
   text-align: center;
   padding-top: 10vh;
@@ -208,7 +208,7 @@ MENU
 CONTACT
 ================================================ */
 .contact {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/concerts/shall_we_dance.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/concerts/shall_we_dance.jpg);
   text-align: center;
   padding-top: 8vh;
 }
