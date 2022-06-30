@@ -9,7 +9,7 @@ const header = /*html*/ `
     <ul>
         <a href="about.html">About</a>
         <a href="conductor.html">Conductor</a>
-        <a href="#chef">Chef</a>
+        <a href="#chef">Chief</a>
         <a href="#staff">Staff</a>
         <a href="#archive">Archive</a>
     </ul>
