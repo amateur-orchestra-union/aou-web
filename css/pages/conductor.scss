@@ -1,0 +1,49 @@
+@use "../header";
+@use "../sidebar";
+@use "../common";
+@use "../section";
+
+
+/* _conductor.scss */
+
+.conductor {
+    position: relative;
+    text-align: center;
+
+    .hero {
+        overflow: scroll;
+    }
+}
+
+.card {
+    display: grid;
+    width: 94vw;
+    margin: 0 auto 3vw;
+    gap: 2vw;
+    grid-template-columns: 46vw 46vw;
+
+    .image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .profile {
+        h2 {
+            font-size: x-large;
+        }
+
+        text-align: left;
+        color: white;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 1440px) {
+    .card {
+        grid-template-columns: 94vw;
+
+        .profile {
+            margin-bottom: 10%;
+        }
+    }
+}
