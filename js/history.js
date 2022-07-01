@@ -28,6 +28,6 @@ const updatePosters = () => {
   });
 };
 
-window.onload = () => {
+window.addEventListener("load", function () {
   updatePosters();
-};
+});
