@@ -104,10 +104,7 @@
     font-size: 18px;
   }
 }
-/* style.scss */
-/*
-GENERAL STYLING
-================================================ */
+/* _common.scss */
 html {
   font-size: 100%;
 }
@@ -117,27 +114,11 @@ body {
   font-family: sans-serif;
 }
 
-/*
-COMMON
-================================================ */
 .title {
   font-family: "Dancing Script", cursive;
   font-size: 7rem;
   margin-bottom: 2rem;
   color: #fff;
-}
-
-p {
-  line-height: 1.7;
-  font-size: 1.125rem;
-  color: #fff;
-}
-
-.container {
-  overflow: auto;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
-  height: 100vh;
 }
 
 section {
@@ -148,73 +129,11 @@ section {
   background-position: center center;
 }
 
-/*
-HERO
-================================================ */
-.hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/concerts/muse.jpg);
-  text-align: center;
-  padding-top: 10vh;
-}
-
-/*
-MENU
-================================================ */
-.menu {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/concerts/lumiere.jpg);
-  align-items: center;
-  text-align: center;
-  padding-top: 10vh;
-}
-
-/*
-CONTACT
-================================================ */
-.contact {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/concerts/shall_we_dance.jpg);
-  text-align: center;
-  padding-top: 8vh;
-}
-
-.btn {
-  background: #555;
-  font-size: 1.5rem;
-  color: #fff;
-  padding: 1rem 3.5rem;
-  border-radius: 6px;
-  display: inline-block;
-  margin: 2rem 0 2.25rem;
-}
-
-.contact-sns {
-  display: flex;
-  justify-content: center;
-}
-.contact-sns a {
-  background: #fff;
-  width: 3.75rem;
-  height: 3.75rem;
-  display: inline-block;
-  margin: 0 0.5rem;
-  border-radius: 50%;
-  font-size: 2rem;
-  padding: 0.75rem 0 0 0.125rem;
-  color: #555;
-}
-
-/* Ripple effect */
-.ripple {
-  background-position: center;
-  transition: background 0.8s;
-  -webkit-transition: background 0.8s;
-  -moz-transition: background 0.8s;
-  -ms-transition: background 0.8s;
-  -o-transition: background 0.8s;
-}
-.ripple:active {
-  background-color: #777;
-  background-size: 100%;
-  transition: background 0s;
+.container {
+  overflow: auto;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  height: 100vh;
 }
 
 /*
@@ -264,5 +183,85 @@ MOBILE SIZE
   .contact-sns a:hover {
     background: rgba(255, 255, 255, 0.5);
   }
+}
+/* _section.scss */
+/*
+HERO
+================================================ */
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/concerts/muse.jpg);
+  text-align: center;
+  padding-top: 10vh;
+}
+
+/*
+MENU
+================================================ */
+.menu {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/concerts/lumiere.jpg);
+  align-items: center;
+  text-align: center;
+  padding-top: 10vh;
+}
+
+/*
+CONTACT
+================================================ */
+.contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/concerts/shall_we_dance.jpg);
+  text-align: center;
+  padding-top: 8vh;
+}
+
+/* style.scss */
+.home {
+  position: relative;
+  text-align: center;
+}
+.home p {
+  line-height: 1.7;
+  font-size: 1.125rem;
+  color: #fff;
+}
+
+.contact {
+  /* Ripple effect */
+}
+.contact .btn {
+  background: #555;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 1rem 3.5rem;
+  border-radius: 6px;
+  display: inline-block;
+  margin: 2rem 0 2.25rem;
+}
+.contact .contact-sns {
+  display: flex;
+  justify-content: center;
+}
+.contact .contact-sns a {
+  background: #fff;
+  width: 3.75rem;
+  height: 3.75rem;
+  display: inline-block;
+  margin: 0 0.5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  padding: 0.75rem 0 0 0.125rem;
+  color: #555;
+}
+.contact .ripple {
+  background-position: center;
+  transition: background 0.8s;
+  -webkit-transition: background 0.8s;
+  -moz-transition: background 0.8s;
+  -ms-transition: background 0.8s;
+  -o-transition: background 0.8s;
+}
+.contact .ripple:active {
+  background-color: #777;
+  background-size: 100%;
+  transition: background 0s;
 }
 /*# sourceMappingURL=style.css.map */
