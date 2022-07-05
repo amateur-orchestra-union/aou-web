@@ -1,3 +1,5 @@
+/* _common.scss */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
 /* _header.scss */
 .topnav {
   top: 0%;
@@ -31,7 +33,6 @@
   .topnav ul {
     display: none;
   }
-
   .topnav a.icon {
     float: right;
     display: block;
@@ -41,13 +42,11 @@
   .topnav.responsive {
     position: absolute;
   }
-
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-
   .topnav.responsive ul {
     float: none;
     display: block;
@@ -99,23 +98,27 @@
   .sidenav {
     padding-top: 15px;
   }
-
   .sidenav a {
     font-size: 18px;
   }
 }
-/* _common.scss */
+@font-face {
+  font-family: "MapoFlowerIsland";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 html {
   font-size: 100%;
 }
 
 body {
   color: #555;
-  font-family: sans-serif;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
 }
 
 .title {
-  font-family: "Dancing Script", cursive;
+  font-family: "MapoFlowerIsland";
   font-size: 7rem;
   margin-bottom: 2rem;
   color: #fff;
@@ -131,8 +134,7 @@ section {
 
 .container {
   overflow: auto;
-  -ms-scroll-snap-type: y mandatory;
-      scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
   height: 100vh;
 }
 
@@ -143,16 +145,13 @@ MOBILE SIZE
   .title {
     font-size: 4rem;
   }
-
   p {
     padding: 0 1rem;
   }
-
   p,
 .menu-list li {
     font-size: 1rem;
   }
-
   .hero {
     padding-top: 12vh;
   }
@@ -161,16 +160,13 @@ MOBILE SIZE
   .title {
     font-size: 4rem;
   }
-
   p {
     padding: 0 1rem;
   }
-
   p,
 .menu-list li {
     font-size: 0.8rem;
   }
-
   .hero {
     padding-top: 12vh;
   }
@@ -179,7 +175,6 @@ MOBILE SIZE
   .btn:hover {
     background: #777;
   }
-
   .contact-sns a:hover {
     background: rgba(255, 255, 255, 0.5);
   }
